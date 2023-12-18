@@ -67,3 +67,28 @@ function displayUserProfile(userData) {
   mainElement.appendChild(cardElement);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+function displayUserNotFound() {
+  const mainElement = document.getElementById('main');
+  mainElement.innerHTML = '';
+
+  const notFoundElement = document.createElement('div');
+  notFoundElement.classList.add('not-found');
+
+  const messageElement = document.createElement('p');
+  messageElement.textContent = 'User not found. Please enter a valid GitHub username.';
+
+  notFoundElement.appendChild(messageElement);
+  mainElement.appendChild(notFoundElement);
+}
